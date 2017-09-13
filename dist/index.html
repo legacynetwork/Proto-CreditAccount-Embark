@@ -1,0 +1,105 @@
+<html>
+
+<head>
+  <title>Legacy.network - Prototype n°2</title>
+  <link rel="stylesheet" href="css/app.css">
+  <script src="js/app.js"></script>
+</head>
+
+<body class="container">
+  <h3>Legacy.network - Prototype n°2</h3>
+
+  <ul class="nav nav-tabs" role="tablist" id="myTabs">
+    <li role="presentation" class="active"><a href="#legacySetSCBlockchain" aria-controls="blockchain" role="tab" data-toggle="tab">Legacy addresses</a></li>
+    <!-- <li role="presentation"><a href="#execution" aria-controls="execution" role="tab" data-toggle="tab">Legacy execution<span class="pull-right" id="legacy-execution"></a></li> -->
+  </ul>
+
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active">
+      <div id="legacySetSCBlockchain">
+        <h3> 1. Set addresses used by Legacy smart contract</h3>
+        <div class="form-group form-inline">
+          <p>Holder wallet address: <input type="text" class="text form-control inputHolderWalletAddress" value="0x"></p>
+          <p>Dev wallet address: <input type="text" class="text form-control inputDevWalletAddress" value="0x"></p>
+          <p>Legacy wallet address: <input type="text" class="text form-control inputLegacyWalletAddress" value="0x"></p>
+          <button class="set btn btn-primary">Set addresses</button>
+        </div>
+      </div>
+
+      <div id="userSetSCBlockchain">
+        <h3> 2. Set addresses used by user smart contract</h3>
+        <div class="form-group form-inline">
+          <p>User wallet address: <input type="text" class="text form-control inputUserWalletAddress" value="0x"> </p>
+          <p>Legacy smart contract address: <input type="text" class="text form-control inputlegacySCAddress" value="0x"> </p>
+          <p>Heir wallet address: <input type="text" class="text form-control inputHeirWalletAddress" value="0x"> </p>
+          <button class="set btn btn-primary">Set addresses</button>
+        </div>
+      </div>
+
+      <div id="legacyGetSCBlockchain">
+        <h3> 3. Get addresses used by Legacy smart contract</h3>
+        <div class="form-group">
+          <div>
+            Current holder wallet address is: <span class="valueHolderWalletAddress"></span> <br> Current dev wallet address
+            is: <span class="valueDevWalletAddress"></span> <br> Current legacy wallet address is: <span class="valueLegacyWalletAddress"></span>            <br>
+          </div>
+          <button class="get btn btn-primary">Get addresses </button>
+        </div>
+      </div>
+
+      <div id="userGetSCBlockchain">
+        <h3> 4. Get addresses used by User smart contract</h3>
+        <div class="form-group">
+          <div>
+            Current user wallet address is: <span class="valueUserWalletAddress"></span> <br> Current Legacy smart contract
+            address is: <span class="valueLegacySCAddress"></span> <br> Current heir wallet address is: <span class="valueHeirWalletAddress"></span>            <br>
+          </div>
+          <button class="get btn btn-primary">Get addresses </button>
+        </div>
+      </div>
+
+      <div id="legacyLogBlockchain">
+        <h3> Contract Calls </h3>
+        <p>Javascript calls being made: </p>
+        <div class="logs">
+        </div>
+      </div>
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="execution">
+      <div id="getwalletAndSCBalance">
+        <h3> 1. Get the balance of wallets and smart contracts</h3>
+        <div class="form-group">
+          <div> Current holder wallet balance is: <span class="valueHolderWalletBalance"></span> </div>
+          <div> Current dev wallet balance is: <span class="valueDevWalletBalance"></span> </div>
+          <div> Current legacy wallet balance is: <span class="valueLegacyWalletBalance"></span> </div>
+          <div> Current user wallet balance is: <span class="valueUserWalletBalance"></span> </div>
+          <div> Current legacy smart contract balance is: <span class="valueLegacySCBalance"></span> </div>
+          <div> Current user smart contract balance is: <span class="valueUserSCBalance"></span> </div>
+          <button class="get btn btn-primary">Get Balances </button>
+        </div>
+      </div>
+
+      <div id="executeMethode">
+        <h3> 2. Actions</h3>
+        <div class="form-group">
+          <div> Push this button that prove I'm alive </div>
+          <button class="get btn btn-primary">I'm alive </button> 
+          <div> Push this button to execute smart contract will execution </div>
+          <button class="get btn btn-primary">I'm alive </button> 
+        </div>
+      </div>
+
+      <div id="legacyExecutionLogBlockchain">
+        <h3> Contract Calls </h3>
+        <p>Javascript calls being made: </p>
+        <div class="logs">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
